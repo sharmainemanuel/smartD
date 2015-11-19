@@ -21,6 +21,17 @@
     -->
     <preference name="BackupWebStorage" value="none" />
 
+
+	<gap:platforms>
+		<gap:platform name="android" />
+	</gap:platforms>
+	
+	<icon src="icon.png" />
+	<icon src="img/icons/smartd_36.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="img/icons/smartd_48.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="img/icons/smartd_72.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="img/icons/smartd_96.png" gap:platform="android" gap:qualifier="xhdpi" />
+	
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
