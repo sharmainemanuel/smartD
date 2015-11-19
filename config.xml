@@ -9,23 +9,11 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-
-	<gap:platforms>
-		<gap:platform name="android" />
-	</gap:platforms>
-	
-	<icon src="icon.png" />
-	<icon src="img/icons/smartd_36.png" gap:platform="android" gap:qualifier="ldpi" />
-	<icon src="img/icons/smartd_48.png" gap:platform="android" gap:qualifier="mdpi" />
-	<icon src="img/icons/smartd_72.png" gap:platform="android" gap:qualifier="hdpi" />
-	<icon src="img/icons/smartd_96.png" gap:platform="android" gap:qualifier="xhdpi" />
-	    
+    
     <!-- Ionic supports Android Jellybean and up --> 
-
     <preference name="android-minSdkVersion" value="16" />
 
     <!-- Don't store local data in an iCloud backup. Turn this to "cloud" to enable storage 
