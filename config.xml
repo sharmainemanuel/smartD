@@ -8,6 +8,11 @@
       Ionic Framework Team
     </author>
     <content src="index.html" />
+	
+	
+	<preference name="phonegap-version" value="3.7.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />	
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
@@ -31,6 +36,9 @@
 	<icon src="img/icons/smartd_48.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="img/icons/smartd_72.png" gap:platform="android" gap:qualifier="hdpi" />
 	<icon src="img/icons/smartd_96.png" gap:platform="android" gap:qualifier="xhdpi" />
+	
+	
+	
 	
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
