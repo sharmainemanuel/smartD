@@ -83,12 +83,8 @@
   .btn-submit{
     max-width:300px;
   }
-  .img-profile{
-    width: 100%;
-    max-height: 300px;
-  }
   .img-icon{
-    max-width: 150px;
+    max-width: 120px;
   }
   .header-adjust{
     padding-top: 20px;
@@ -161,6 +157,12 @@
 .profile-header{
   position: relative;
   width:100%;
+  padding: 0;
+  padding-top: 10px;
+}
+.img-profile{
+  width:inherit;
+  height:100%;
 }
 .text-title{
   position: relative;
