@@ -1,37 +1,42 @@
 <div class="navbar-fixed" id="fixer">
     <nav class="light-blue lighten-1 resposive-img">
       <a href="#" class="brand-logo center"><span class="brand-logo1">Cart</span>
-      <a href="/#/" class="btn-back"><span class="fa fa-angle-left fa-3x"></span></a>
+      <a ng-click="back()" class="btn-back"><span class="fa fa-angle-left fa-3x"></span></a>
       <a href="#" class="brand-logo2 right"><span class="fa fa-search fa-2x"></span></a>
      </nav>
 </div>
 
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red">
-      <i class="fa fa-cart-plus"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating green"><i class="fa fa-plus"></i></a></li>
-      <li><a class="btn-floating red"><i class="fa fa-minus"></i></i></a></li>
-    </ul>
-  </div>
+  <div class="row">
+    <div class="col s6 m4" ng-repeat="y in items">
+      <div class="card" >
+        <div class="row" >
+          <div class="col s12">
+          <a href="" class="fa fa-times fa-2x" style="position: absolute;right: 10px;width: 3px;padding: 10px;"></a>
+            <div class="card-image">
+              <img src="img#" style="position:relative;padding:5px;padding-top:50px;max-width:300px;">
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-content">
+              <p>{{y.productname}}</p>
+              <p>{{y.pqty}}</p>
+              <p>{{y.pprice}}</p>
+            </div>
+          </div>
+        </div>
 
-<div id="footer">
-        <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#/cart#test1">my cart</a></li>
-          <li class="tab col s3"><a href="#/cart#test2">asdasdsa</a></li>
-          <li class="tab col s3"><a href="#/cart#test3">dry goods</a></li>
-          <li class="tab col s3"><a href="#/cart#test4">to buy</a></li>
+      <div class="card-action">
+
+        <ul class="pagination">
+          <li style="position:relative;padding:5px;padding-top:50px;max-width:300px;"><a ng-click="minus()" class="btn-floating red lighten-3 waves-effect waves-red btn-flat"><i class="fa fa-minus fa-lg"></i></a></li>
+          <li><a ng-click="add()" class="btn-floating green lighten-3 waves-effect waves-green btn-flat"><i class="fa fa-plus fa-lg"></i></a></li>
         </ul>
-</div>
-<div id="test1" class="col s12">
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red">
-      <i class="fa fa-cart-plus"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating green"><i class="fa fa-plus"></i></a></li>
-      <li><a class="btn-floating red"><i class="fa fa-minus"></i></i></a></li>
-    </ul>
+      </div>
+      </div>
+    </div>
   </div>
-</div> 
+   <div class="footer" style="padding-top: 10px;padding-bottom: 0px;position:fixed;bottom:0px;width:100%;" ng-click="go('/checkout')">
+      <nav class="light-blue lighten-1 resposive-img waves-effect waves-light">
+        <a href="/#/checkout"class="brand-logo center">Check-out<span class="fa fa-sign-out"></span></a>
+      </nav>
+    </div>

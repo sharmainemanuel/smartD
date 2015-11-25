@@ -1,0 +1,42 @@
+<div class="row">
+
+<div class="navbar-fixed" id="fixer">
+    <nav class="light-blue lighten-1 resposive-img">
+      <a href="#" class="brand-logo center"><span class="brand-logo1">Delivery</span>
+      <a ng-click="back()" class="btn-back"><span class="fa fa-angle-left fa-3x"style="padding-left:10px;"></span></a>
+     </nav>
+</div>
+  
+<div class="row">
+    <form class="col s12">
+        <div class="row"><br>
+        <div class="input-field col s12 m6">
+          <input id="customer_name" type="text" class="validate" style="border-bottom-style:solid;border-color:grey;" value="{{ cname }}">
+          <label for="customer_name" style="color:grey;"></label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="customer_address" type="text" class="validate" style="border-bottom-style:solid;border-color:grey;">
+          <label for="customer_address" style="color:grey;">Customer Address</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="first_name" type="text" class="validate" style="border-bottom-style:solid;border-color:grey;">
+          <label for="first_name" style="color:grey;">Product Name</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="first_name" type="text" class="validate" style="border-bottom-style:solid;border-color:grey;">
+          <label for="first_name" style="color:grey;">Product Quantity</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="first_name" type="text" class="validate" style="border-bottom-style:solid;border-color:grey;">
+          <label for="first_name" style="color:grey;">Total Amount</label>
+        </div>
+        <div class="col s12" ng-click="go('/deliver')">
+        <a href="" onclick="Materialize.toast('Your transaction is on process.', 2000, 'rounded')" class="brand-logo center waves-effect waves-light btn"> <span class="fa fa-paper-plane-o">Deliver</span></a>
+    </div>
+        </div>
+      </form>
+	  
+  </div>
+  </div>
+  
+  

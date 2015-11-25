@@ -1,0 +1,23 @@
+<div class="row">
+
+<div class="navbar-fixed" id="fixer">
+    <nav class="light-blue lighten-1 resposive-img">
+      <a href="#" class="brand-logo center"><span class="brand-logo1">Delivery</span>
+      <a ng-click="back()" class="btn-back"><span class="fa fa-angle-left fa-3x"style="padding-left:10px;"></span></a>
+     </nav>
+</div>
+  
+<div class="row">
+
+
+   <ul class="collection with-header">
+        <li class="collection-header"><h5>Customer Name<a href="#!" class="secondary-content"><i>Status</i></a></h5></li>
+		
+		<li class="collection-item" ng-repeat="x in customername"><div ng-click="go('/delivery_list')">{{ x.cname }}<a href="#!" class="secondary-content"><i>pending</i></a></div></li>
+		
+	
+      </ul> 
+  </div>
+ </div>
+  
+  
